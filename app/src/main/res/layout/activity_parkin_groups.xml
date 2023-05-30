@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkinGroupsActivity">
+
+    <LinearLayout
+        android:id="@+id/LayoutLaundry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+
+            android:id="@+id/TbRowLaundry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BtnNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="#6200EA"
+                android:gravity="center"
+                android:onClick="OnClickNewBookings"
+                android:text="الجديدة"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+
+            <Button
+                android:id="@+id/BtnAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#f1f2f3"
+                android:gravity="center"
+                android:onClick="OnClickAcceptBookings"
+                android:text="المقبولة"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/BtnUnAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#f1f2f3"
+                android:gravity="center"
+                android:onClick="OnClickUnAcceptBookings"
+                android:text="المرفوضة"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+
+        </TableRow>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

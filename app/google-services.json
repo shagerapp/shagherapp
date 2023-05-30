@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "836427306029",
+    "firebase_url": "https://parkingapp-b8c80-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "parkingapp-b8c80",
+    "storage_bucket": "parkingapp-b8c80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836427306029:android:6aec24f69299f03b7014a4",
+        "android_client_info": {
+          "package_name": "com.example.parking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgURR4gxzb2EIU1jtibGmQBnA4PxkLgO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836427306029:android:7546aa7241dc512a7014a4",
+        "android_client_info": {
+          "package_name": "com.example.parkingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgURR4gxzb2EIU1jtibGmQBnA4PxkLgO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836427306029:android:32900983854a51b77014a4",
+        "android_client_info": {
+          "package_name": "com.example.upapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgURR4gxzb2EIU1jtibGmQBnA4PxkLgO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
