@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExtenationBookingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rect_rounded_bottom"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp">
+
+                    <TextView
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginVertical="0dp"
+                        android:drawableLeft="@drawable/baseline_west_24"
+                        android:drawableTint="@color/black"
+                        android:layoutDirection="rtl"
+                        android:padding="10dp"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="0dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="right"
+                        android:layoutDirection="rtl"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:text="Extend The Reservation"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtStartLocation"
+                    android:layout_alignStart="@+id/txtStartLocation"
+                    android:background="@color/quantum_black_divider"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="0dp"
+                    android:background="@drawable/rect_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:layoutDirection="ltr"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Parking Group"
+                            android:textColor="#DA2E2929"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/parkingGroup"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:layoutDirection="ltr"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="129dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Car Plate"
+                            android:textColor="#DA2E2929"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/carPlate"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:layoutDirection="ltr"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:gravity="center"
+                            android:text="Parking Spot"
+                            android:textColor="#DA2E2929"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/parkingSpot"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:layoutDirection="ltr"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Date"
+                            android:textColor="#DA2E2929"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:layoutDirection="ltr"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Duration "
+                            android:textColor="#DA2E2929"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/duration"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:layoutDirection="ltr"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="114dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="0dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Hours"
+                            android:textColor="#DA2E2929"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hours"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layoutDirection="rtl"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layoutDirection="rtl"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif-black"
+                                android:padding="0dp"
+                                android:text="Number of hours"
+                                android:textColor="#6BBBDB"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layoutDirection="rtl"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/symole_border"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/extenationHours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-black"
+                                    android:paddingHorizontal="20dp"
+                                    android:paddingVertical="0dp"
+                                    android:text="00"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/hourLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-black"
+                                    android:paddingHorizontal="20dp"
+                                    android:paddingVertical="0dp"
+                                    android:text="hour"
+                                    android:textSize="22dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:layoutDirection="rtl"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:paddingHorizontal="20dp"
+                                android:paddingVertical="0dp"
+                                android:text="End time"
+                                android:textColor="#6BBBDB"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/viewExtenationTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/symole_border"
+                                android:fontFamily="sans-serif-black"
+                                android:paddingHorizontal="20dp"
+                                android:paddingVertical="0dp"
+                                android:text="00:00 AM"
+                                android:textSize="22dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp">
+
+                    </SeekBar>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/BookingBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rect_border"
+                    android:fontFamily="sans-serif-black"
+                    android:fontFeatureSettings="bold"
+                    android:padding="5dp"
+                    android:text="Extend "
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

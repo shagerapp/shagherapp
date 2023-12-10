@@ -17,6 +17,9 @@
       "api_key": [
         {
           "current_key": "AIzaSyBgURR4gxzb2EIU1jtibGmQBnA4PxkLgO4"
+        },
+        {
+          "current_key": "AIzaSyCR48f-6xs7i381GTIzN_YM87aNmHZmFUA"
         }
       ],
       "services": {
@@ -36,25 +39,9 @@
       "api_key": [
         {
           "current_key": "AIzaSyBgURR4gxzb2EIU1jtibGmQBnA4PxkLgO4"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:836427306029:android:32900983854a51b77014a4",
-        "android_client_info": {
-          "package_name": "com.example.upapp"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
+        },
         {
-          "current_key": "AIzaSyBgURR4gxzb2EIU1jtibGmQBnA4PxkLgO4"
+          "current_key": "AIzaSyCR48f-6xs7i381GTIzN_YM87aNmHZmFUA"
         }
       ],
       "services": {

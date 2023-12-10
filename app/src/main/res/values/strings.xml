@@ -1,4 +1,127 @@
 <resources>
-    <string name="app_name">parking</string>
+    <string name="app_name">Shagher</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_list_bookings">Bookings</string>
+    <string name="home_title">Home</string>
+    <string name="booking_title">  Create Booking</string>
+    <string name="viewbook_title">Booking</string>
+    <string name="edit">Update</string>
+    <string name="settings">Settings</string>
+    <string name="edit_mode"> update data</string>
+    <string name="spots_title">Vehicle Parking</string>
+    <string name="login"> log in </string>
+    <string name="group_title">  Group Park</string>
+    <string name="register">  Create Account </string>
+    <string name="signup">Register</string>
+    <string name="logout">Log out</string>
+    <string name="notHaveAccount">   you dont have account? </string>
+    <string name="user_name">  user Name</string>
+    <string name="full_name">  Full Name</string>
+    <string name="first_name">  First Name </string>
+    <string name="last_name">   Last Name</string>
+    <string name="email">   Email </string>
+    <string name="edit_email"> Update Email</string>
+    <string name="phone"> Phone Number </string>
+    <string name="edit_phone"> Update Phone Number   </string>
+    <string name="edit_pass">  Changed Password </string>
+    <string name="password"> Password  </string>
+    <string name="rpassword"> Confirm Password </string>
+    <string name="carId">Car Plate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="edit_pro_save">  Save Update   </string>
+    <string name="upload_image">   Uplaod Image   </string>
+    <string name="carPlate1"> First Car Plate     </string>
+    <string name="carPlate2"> Second Car Plate     </string>
+    <string name="carPlate3"> Third Car Plate     </string>
+    <string name="carPlateNum"> Car Plate number   </string>
+
+
+    <string name="home"> home  </string>
+    <string name="save"> Save  </string>
+    <string name="notifiy"> Notifications  </string>
+    <string name="viewBookingInfo">   Details Booked   </string>
+
+    <string name="profile">  Profile  </string>
+    <string name="privacy"> Privacy Settings   </string>
+    <string name="googleMaps">  Google Maps  </string>
+    <string name="title_activity_not_connection">notConnectionActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="statistics">Statistics</string>
+    <string name="parkingGroups"> Group Parking </string>
+    <string name="parking">  Parking</string>
+    <string name="arrival">You have reached your position!</string>
+    <string name="userِArrivesUniversity">Would you like to explore the nearest parking you can reserve?</string>
+
+
+    <!--    <string-array name="months">-->
+    <!--        <item>الكل</item>-->
+    <!--        <item>يناير</item>-->
+    <!--        <item>فبراير</item>-->
+    <!--        <item>مارس</item>-->
+    <!--        <item>أبريل</item>-->
+    <!--        <item>مايو</item>-->
+    <!--        <item>يونيو</item>-->
+    <!--        <item>يوليو</item>-->
+    <!--        <item>أغسطس</item>-->
+    <!--        <item>سبتمبر</item>-->
+    <!--        <item>أكتوبر</item>-->
+    <!--        <item>نوفمبر</item>-->
+    <!--        <item>ديسمبر</item>-->
+    <!--    </string-array>-->
+
+
+    <string-array name="hours">
+        <item>04 AM</item>
+        <item>05 AM</item>
+        <item>06 AM</item>
+        <item>07 AM</item>
+        <item>08 AM</item>
+        <item>09 AM</item>
+        <item>10 AM</item>
+        <item>11 AM</item>
+        <item>12 AM</item>
+        <item>01 PM</item>
+        <item>02 PM</item>
+        <item>03 PM</item>
+        <item>04 PM</item>
+        <item>05 PM</item>
+        <item>05 PM</item>
+        <item>06 PM</item>
+        <item>07 PM</item>
+        <item>08 PM</item>
+    </string-array>
+
+
+    <string name="API_KEY">AIzaSyBgURR4gxzb2EIU1jtibGmQBnA4PxkLgO4</string>
+    <string name="MAP_KEY">AIzaSyB5fpiSKcBnjtEK1UqPdCHqxzHB_C9RO4E</string>
+    <string name="login_string">Already have an account? <b>Login here</b></string>
+    <string name="open_navigation_drawer">Open Drawer</string>
+    <string name="close_navigation_drawer">Open Drawer</string>
+    <string name="title_activity_direction">DirectionActivity</string>
+    <string name="default_notification_channel_id">N1122334455</string>
+
+    <!--   =====================================================  -->
+    <string name="available">available</string>
+    <string name="booked">booked up</string>
+    <string name="temporarily_booked">temporarily booked</string>
+
+
+    <!--   Buttons  -->
+
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_cancel">Cancel</string>
+
 </resources>

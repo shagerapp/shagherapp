@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="20dp"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/rect_border"
+    android:gravity="center"
+    tools:context=".NotifiyActivity"
+    android:paddingHorizontal="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/notifiy_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/source"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/source"
+            android:textAlignment="center"
+            android:paddingTop="15dp"
+            android:visibility="gone"
+            android:paddingBottom="15dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:background="@drawable/cirecle_border"
+            app:srcCompat="@drawable/baseline_notifications_active_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layoutDirection="rtl"
+        android:background="@drawable/rect_border"
+        android:backgroundTint="#FFFFFF">
+
+        <TextView
+            android:id="@+id/notifiy_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/DialogBoxBtnExtention"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:onClick="OnClickBtnCancel"
+            android:background="@drawable/rect_border"
+            android:text="Extend the booking"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="end"
+            android:layoutDirection="ltr"
+            android:gravity="center_horizontal">
+
+
+            <Button
+                android:id="@+id/DialogBoxBtnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="OnClickBtnCancel"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/quantum_grey500"
+                android:textSize="20dp" />
+
+
+            <Button
+
+                android:id="@+id/DialogBoxBtnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:onClick="OnClickBtnOK"
+                android:text="OK"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

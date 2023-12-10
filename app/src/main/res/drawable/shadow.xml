@@ -1,0 +1,36 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <solid android:color="#ffffff" /> &lt;!&ndash; Background color of the button &ndash;&gt;-->
+<!--    <corners android:radius="8dp" /> &lt;!&ndash; Corner radius of the button &ndash;&gt;-->
+<!--    <padding-->
+<!--        android:left="8dp"-->
+<!--        android:top="8dp"-->
+<!--        android:right="8dp"-->
+<!--        android:bottom="8dp" /> &lt;!&ndash; Padding of the button &ndash;&gt;-->
+<!--</shape>-->
+
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:right="5dp" android:top="5dp">
+                <shape>
+                    <corners android:radius="300sp" />
+                    <solid android:color="#D6D6D6" />
+                </shape>
+            </item>
+            <item android:bottom="2dp" android:left="2dp">
+                <shape>
+                    <gradient android:angle="270"
+                        android:endColor="#E2E2E2" android:startColor="#BABABA" />
+                    <stroke android:width="5dp" android:color="#BABABA" />
+                    <corners android:radius="300sp" />
+                    <padding android:bottom="3dp" android:left="3dp"
+                        android:right="3dp" android:top="3dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

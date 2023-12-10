@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:elevation="7dp"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="5dp"
+    app:behavior_hideable="false"
+    android:orientation="vertical"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/timeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/txtSheetTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/quantum_grey500"
+            android:text="time"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/quantum_black_divider" />
+
+        <TextView
+            android:id="@+id/txtSheetDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/quantum_grey500"
+            android:textSize="20dp"
+            android:text="destince" />
+
+    </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/previewDirections"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:background="@drawable/edit_border"-->
+<!--                android:backgroundTint="@color/purple_500"-->
+<!--                android:drawableLeft="@drawable/baseline_assistant_direction_24"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingHorizontal="10dp"-->
+<!--                android:paddingVertical="3dp"-->
+<!--                android:text="Directions"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20dp" />-->
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:id="@+id/txtSheetRoute"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:text="Fastest route"-->
+<!--            android:textColor="@color/quantum_grey600"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textStyle="bold" />-->
+<!--        </LinearLayout>-->
+<!--        <View-->
+<!--            android:id="@+id/view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_below="@+id/txtSheetRoute"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@color/quantum_black_divider" />-->
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtSheetSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="20dp"
+        android:text="Steps"
+        android:textColor="@color/quantum_black_text"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stepRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSheetSteps"
+        android:layout_marginTop="20dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        tools:listitem="@layout/step_item_layout" />
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

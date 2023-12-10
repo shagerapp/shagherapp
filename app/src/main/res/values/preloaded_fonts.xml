@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/arimo</item>
+        <item>@font/assistant_bold</item>
+        <item>@font/baloo_da</item>
+        <item>@font/jua</item>
+    </array>
+</resources>

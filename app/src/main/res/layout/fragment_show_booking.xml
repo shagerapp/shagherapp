@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showBookingFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="95dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginVertical="10dp">
+
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginVertical="0dp"
+                    android:drawableLeft="@drawable/baseline_west_24"
+                    android:drawableTint="@color/black"
+                    android:layoutDirection="rtl"
+                    android:padding="10dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layoutDirection="rtl"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Booking Details"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtStartLocation"
+                android:layout_alignStart="@+id/txtStartLocation"
+                android:background="@color/quantum_black_divider"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/layoutEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="50dp"
+                android:padding="20dp"
+                android:visibility="visible"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/rect_border">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/signal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center"
+                    android:text="Empty.... No bookings available!!"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+
+                <Button
+                    android:id="@+id/creatBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="-1dp"
+                    android:background="@drawable/rect_border"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:layoutDirection="rtl"
+                    android:text="Create Booking Request"
+                    android:textColor="#FFF"
+                    android:textSize="20dp"
+                    app:icon="@drawable/outline_book_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBookDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rect_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:layoutDirection="ltr"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center"
+                            android:text="Parking Group"
+                            android:textColor="#DA2E2929"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/parkingGroup"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text=""
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:layoutDirection="ltr"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center"
+                            android:text="Car Plate"
+                            android:textColor="#DA2E2929"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/carPlate"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:layoutDirection="ltr"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="0dp"
+                            android:text=" Parking Spot"
+                            android:textColor="#DA2E2929"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/parkingSpot"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:visibility="gone"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:layoutDirection="ltr"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center"
+                            android:text="Date"
+                            android:textColor="#DA2E2929"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:layoutDirection="ltr"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center"
+                            android:text="Duration "
+                            android:textColor="#DA2E2929"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/duration"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:backgroundTint="@color/editColor"
+                        android:background="@drawable/rect_rounded"
+                        android:layoutDirection="ltr"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="0dp"
+                            android:text="Hours"
+                            android:textColor="#DA2E2929"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hours"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0C0000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="0dp"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                    <Button
+                        android:id="@+id/extensionBookingBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="-1dp"
+                        android:background="@drawable/rect_border"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:layoutDirection="rtl"
+                        android:text="Extend Booking Period"
+                        android:textColor="#FFF"
+                        android:textSize="20dp"
+                        app:icon="@drawable/outline_book_24" />
+
+                    <Button
+                        android:id="@+id/cancelBookingBth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="-3dp"
+                        android:background="@drawable/rect_border"
+                        android:backgroundTint="@color/secondry"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:layoutDirection="rtl"
+                        android:text="Cancel Reservation"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:icon="@drawable/ic_baseline_delete_24" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

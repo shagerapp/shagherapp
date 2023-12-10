@@ -6,7 +6,6 @@
     android:layout_height="fill_parent"
     tools:context=".RegisterActivity">
 
-
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
@@ -22,25 +21,35 @@
             android:padding="25dp"
             android:gravity="center">
 
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView2"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:layout_editor_absoluteX="20dp"-->
+<!--                android:src="@drawable/logo1" />-->
+
             <TextView
                 android:id="@+id/Title"
                 android:layout_width="fill_parent"
-                android:layout_height="44dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:gravity="center"
-                android:text="Sgin Up"
+                android:text="@string/signup"
                 android:textColor="@color/purple_500"
-                android:textSize="25sp"/>
+                android:textStyle="bold"
+                android:textSize="40sp"/>
 
             <EditText
                 android:id="@+id/Fname"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:layout_below="@+id/Title"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/rect_border"
-                android:drawablePadding="0dp"
-                android:hint="first name"
+                android:drawablePadding="20dp"
+                android:backgroundTint="#F3F4F4F4"
+                android:hint="@string/first_name"
                 android:inputType="textPersonName"
                 android:layoutDirection="ltr"
                 android:padding="10dp"
@@ -54,9 +63,10 @@
                 android:layout_height="50dp"
                 android:layout_below="@+id/Fname"
                 android:layout_marginTop="20dp"
+                android:backgroundTint="#F3F4F4F4"
                 android:background="@drawable/rect_border"
                 android:drawablePadding="10dp"
-                android:hint="last name"
+                android:hint="@string/last_name"
                 android:inputType="textPersonName"
                 android:layoutDirection="ltr"
                 android:padding="10dp"
@@ -64,40 +74,68 @@
                 android:textColorHint="@color/purple_500"
                 android:textSize="14sp" />
 
-<!--            <EditText-->
-<!--                android:id="@+id/Email"-->
-<!--                android:layout_width="fill_parent"-->
-<!--                android:layout_height="50dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:layout_below="@+id/Lname"-->
-<!--                android:backgroundTintMode="add"-->
-<!--                android:drawableLeft="@drawable/ic_baseline_person_outline_24"-->
-<!--                android:drawablePadding="10dp"-->
-<!--                android:background="#7EF3EFEF"-->
-<!--                android:hint="email"-->
-<!--                android:layoutDirection="ltr"-->
-<!--                android:inputType="textWebEmailAddress"-->
-<!--                android:padding="10dp"-->
-<!--                android:textColor="@color/purple_500"-->
-<!--                android:textColorHint="@color/purple_500" />-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/VEmail_error"-->
-<!--                android:layout_width="fill_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textColor="#AE0909"-->
-<!--                android:textSize="18sp" />-->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_below="@+id/Lname"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
 
             <EditText
 
                 android:id="@+id/Phone"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
+                android:layout_below="@+id/progressBar"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#F3F4F4F4"
+                android:background="@drawable/rect_border"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/baseline_phone_enabled_24"
+                android:hint="@string/phone"
+                android:inputType="text"
+                android:layoutDirection="ltr"
+                android:padding="10dp"
+                android:textColor="@color/purple_500"
+                android:textColorHint="@color/purple_500"
+                android:textSize="14sp" />
+
+            <EditText
+
+                android:id="@+id/Email"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
                 android:layout_below="@+id/Email"
                 android:layout_marginTop="10dp"
+                android:backgroundTint="#F3F4F4F4"
                 android:background="@drawable/rect_border"
-                android:hint="phone number"
-                android:inputType="number"
+                android:hint="@string/email"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/baseline_alternate_email_24"
+                android:inputType="textEmailAddress"
+                android:layoutDirection="ltr"
+                android:padding="10dp"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/purple_500"
+                android:textColorHint="@color/purple_500"
+                android:textSize="14sp" />
+
+            <EditText
+
+                android:id="@+id/CarId"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Email"
+                android:backgroundTint="#F3F4F4F4"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rect_border"
+                android:hint="@string/carId"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/baseline__car_24"
+                android:inputType="text"
                 android:layoutDirection="ltr"
                 android:padding="10dp"
                 android:textColor="@color/purple_500"
@@ -106,72 +144,84 @@
 
 
             <EditText
-                android:id="@+id/Pass1"
+                android:id="@+id/Pass"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:layout_below="@+id/Phone"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rect_border"
-                android:drawablePadding="10dp"
-                android:hint="password"
+                android:drawablePadding="20dp"
+                android:backgroundTint="#F3F4F4F4"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:layoutDirection="ltr"
                 android:padding="10dp"
+                android:textAlignment="viewEnd"
                 android:textColor="@color/purple_500"
                 android:textColorHint="@color/purple_500"
                 android:textSize="14sp" />
+
             <TextView
-                android:id="@+id/VPass1_error"
+                android:id="@+id/VPass_error"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
                 android:textColor="#AE0909"
+                android:visibility="gone"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/Pass2"
+                android:id="@+id/Rpass"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
-                android:layout_below="@+id/Pass1"
+                android:layout_below="@+id/Pass"
+                android:drawablePadding="20dp"
+                android:backgroundTint="#F3F4F4F4"
+                android:drawableLeft="@drawable/baseline_password_24"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rect_border"
-                android:drawablePadding="10dp"
-                android:hint="confirm password"
+                android:hint="@string/rpassword"
                 android:inputType="textPassword"
                 android:layoutDirection="ltr"
                 android:padding="10dp"
+                android:textAlignment="viewEnd"
                 android:textColor="@color/purple_500"
                 android:textColorHint="@color/purple_500"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/VPass2_error"
+                android:id="@+id/VRpass_error"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#AE0909"
+                android:visibility="gone"
                 android:textSize="18sp" />
 
             <Button
                 android:id="@+id/BtnRegister"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="20dp"
-                android:layout_below="@+id/Pass2"
+                android:layout_below="@+id/Rpass"
+                android:background="@drawable/rect_border"
                 android:backgroundTint="@color/purple_500"
-                android:text="Register" />
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:text="@string/signup" />
 
 
                 <LinearLayout
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layoutDirection="ltr"
-                    android:layout_marginTop="30dp">
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:id="@+id/VRLabel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="you have an account ?"
+                        android:text=" You have Account ?"
                         android:textSize="20sp" />
 
                     <Button
@@ -179,18 +229,30 @@
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:layout_below="@+id/Pass2"
-                        android:autoLink="all"
-                        android:inputType="textUri"
+                        android:layout_below="@+id/Rpass"
+                        android:autoLink="none"
                         android:backgroundTint="#D8D5DD"
-                        android:text="Login"
-                        android:textSize="20dp"
-                        android:textColor="@color/purple_500" />
+                        android:pointerIcon="hand"
+                        android:text="@string/login"
+                        android:textColor="@color/purple_500"
+                        android:textSize="20dp" />
 
                 </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/background_alert"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="#A9272525">
+
+        <include layout="@layout/alert_notify" />
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
