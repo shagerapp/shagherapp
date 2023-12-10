@@ -1,0 +1,98 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DialogBox"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:layout_marginTop="100dp"
+    android:background="#eee"
+    android:padding="5px"
+    android:orientation="vertical"
+    android:textColor="@color/white"
+    android:visibility="invisible">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:layoutDirection="ltr"
+            android:navigationIcon="@android:drawable/ic_dialog_alert">
+
+            <TextView
+                android:id="@+id/DialogBoxTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifiy"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#FFF"
+                android:textAlignment="center"
+                android:textSize="23dp" />
+
+        </Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layoutDirection="rtl"
+            android:background="@drawable/rect_border"
+            android:backgroundTint="#FFFFFF">
+
+            <TextView
+
+                android:id="@+id/DialogBoxMessage"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginTop="50dp"
+                android:text="Time has expired, your parking reservation has been cancelled"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_gravity="end"
+      android:layoutDirection="ltr"
+    android:gravity="center_horizontal">
+
+      <Button
+          android:id="@+id/DialogBoxBtnCancel"
+          android:layout_width="wrap_content"
+          android:layout_height="60dp"
+          android:layout_alignParentStart="true"
+          android:backgroundTint="@color/white"
+          android:gravity="center"
+          android:onClick="OnClickDialogBtnCancel"
+          android:text="Cancel"
+          android:textColor="#333"
+          android:textSize="20dp" />
+
+
+
+      <Button
+
+            android:id="@+id/DialogBoxBtnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:text="OK"
+            android:onClick="OnClickDialogBtnOK"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+  </RelativeLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

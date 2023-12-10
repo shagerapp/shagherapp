@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings_fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_border"
+        android:paddingHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="0dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="0dp"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/baseline_keyboard_backspace_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="start"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="@string/privacy"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="20dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/legend_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/edit_email"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rect_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+
+
+                <EditText
+                    android:id="@+id/update_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rect_border"
+                    android:backgroundTint="@color/editColor"
+                    android:drawableLeft="@drawable/baseline_alternate_email_24"
+                    android:drawablePadding="20dp"
+                    android:inputType="textEmailAddress"
+                    android:layoutDirection="rtl"
+                    android:padding="8dp"
+                    android:hint="Email"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/email_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rect_border"
+                    android:backgroundTint="@color/editColor"
+                    android:drawableLeft="@drawable/baseline_password_24"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:layoutDirection="rtl"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_update_email"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:background="@drawable/rounded_edittext"
+                        android:fontFamily="sans-serif-black"
+                        android:textAllCaps="false"
+                        android:text="@string/save"
+                        android:textSize="18dp" />
+
+
+                    <Button
+                        android:id="@+id/btn_edit_email"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:background="@drawable/baseline_edit_24"
+                        android:padding="5dp"
+                        android:textSize="20dp"
+                        android:textAllCaps="false"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/legend_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/edit_phone"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rect_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+
+                <EditText
+                    android:id="@+id/update_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rect_border"
+                    android:backgroundTint="@color/editColor"
+                    android:drawableLeft="@drawable/baseline_phone_enabled_24"
+                    android:drawablePadding="20dp"
+                    android:inputType="text"
+                    android:layoutDirection="rtl"
+                    android:padding="8dp"
+                    android:hint="Phone Number"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/phone_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rect_border"
+                    android:backgroundTint="@color/editColor"
+                    android:drawableLeft="@drawable/baseline_password_24"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:layoutDirection="rtl"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_update_phone"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@drawable/rounded_edittext"
+                    android:fontFamily="sans-serif-black"
+                    android:textAllCaps="false"
+                    android:text="@string/save"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/legend_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/edit_pass"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <!--                <TextView-->
+
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="start"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:textSize="15sp"-->
+                <!--                    android:text="@string/password" />-->
+
+
+                <EditText
+                    android:id="@+id/update_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rect_border"
+                    android:backgroundTint="@color/editColor"
+                    android:drawableLeft="@drawable/baseline_password_24"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Current Password"
+                    android:inputType="textPassword"
+                    android:layoutDirection="rtl"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/update_new_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rect_border"
+                    android:backgroundTint="@color/editColor"
+                    android:drawableLeft="@drawable/baseline_password_24"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="New Password"
+                    android:inputType="textPassword"
+                    android:layoutDirection="rtl"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_update_pass"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:fontFamily="sans-serif-black"
+                    android:textAllCaps="false"
+                    android:text="@string/save"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/btn_active_setting_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/purple_500"
+                android:drawableLeft="@drawable/baseline_edit_24"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/white"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="@string/edit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" />
+
+    <LinearLayout
+        android:id="@+id/background_alert"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="#A9272525">
+
+        <include layout="@layout/alert_notify" />
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

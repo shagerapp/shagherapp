@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/group_dialog_box"
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:layout_height="500dp"
+    android:gravity="center"
+    android:layout_margin="0dp"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/rounded_top"
+    android:padding="5px"
+    android:orientation="vertical"
+    android:textColor="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_close_dialog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/baseline_close_24" />
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/car" />
+
+
+
+    </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/spotStatus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/signal" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/btn_booking"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/baseline_bookmarks_24"
+                    android:background="@drawable/rect_border_second"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_gravity="left"
+                    app:tint="@color/source"
+                    android:gravity="center" />
+
+
+                <ImageView
+                    android:id="@+id/btn_view_spots"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/baseline_local_parking_24"
+                    android:layout_marginHorizontal="30dp"
+                    android:background="@drawable/rect_border_second"
+                    android:padding="10dp"
+                    app:tint="@color/source"
+                    android:layout_gravity="center"/>
+
+
+                <ImageView
+                    android:id="@+id/btn_view_map"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/map"
+                    android:background="@drawable/rect_border_second"
+                    android:padding="10dp"
+                    android:layout_gravity="right"
+                    android:gravity="center" />
+
+
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:layout_marginTop="50dp"-->
+<!--                    android:gravity="end"-->
+<!--                    android:layoutDirection="ltr">-->
+
+        <!--            <Button-->
+<!--                android:id="@+id/DialogBoxBtnCancel2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layoutDirection="rtl"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="الغاء"-->
+<!--                android:background="@drawable/rect_border"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                app:icon="@drawable/baseline_close_24"-->
+<!--                android:textColor="#FFF" />-->
+
+
+<!--            <Button-->
+
+<!--                android:id="@+id/DialogBoxBtnOk"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:gravity="center"-->
+<!--                android:onClick="OnClickDialogBtnOK"-->
+<!--                android:text="OK"-->
+<!--                android:textColor="#FFF"-->
+<!--                android:textSize="20dp" />-->
+
+<!--        </RelativeLayout>-->
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

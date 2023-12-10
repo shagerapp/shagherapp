@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ParkingMapFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:layout_marginVertical="0dp">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginVertical="0dp"
+                android:drawableLeft="@drawable/baseline_west_24"
+                android:drawableTint="@color/black"
+                android:layoutDirection="rtl"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="start"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layoutDirection="rtl"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp"
+                android:text="Parkings"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtStartLocation"
+            android:layout_alignStart="@+id/txtStartLocation"
+            android:background="@color/quantum_black_divider"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="60dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="0sp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp">
+
+                        <LinearLayout
+                            android:layout_width="230dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/source" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/source" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/source" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@color/source" />
+
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="37dp"
+                    android:backgroundTint="@color/editColor"
+                    android:background="@drawable/rect_border"
+
+                    android:orientation="vertical"
+                    android:paddingHorizontal="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p6"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p7"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+
+                    <ImageView
+                        android:id="@+id/p8"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+
+                    <ImageView
+                        android:id="@+id/p9"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="-1.5dp"
+                    android:backgroundTint="@color/editColor"
+                    android:background="@drawable/rect_border"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/p15"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p16"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p17"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p18"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p19"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p20"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p21"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+
+                    <ImageView
+                        android:id="@+id/p22"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+
+                    <ImageView
+                        android:id="@+id/p23"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:backgroundTint="@color/editColor"
+                    android:background="@drawable/rect_border"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/p24"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p25"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p26"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p27"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p28"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p29"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+                    <ImageView
+                        android:id="@+id/p30"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+
+                    <ImageView
+                        android:id="@+id/p31"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+
+                    <ImageView
+                        android:id="@+id/p32"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/cirecle_border"
+                        android:backgroundTint="@color/spotMapBg" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="460dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/source" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="78dp"
+                android:layout_marginTop="-20dp"
+                android:backgroundTint="@color/editColor"
+                android:background="@drawable/rect_border"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="5dp">
+
+
+                <ImageView
+                    android:id="@+id/p10"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/cirecle_border"
+                    android:backgroundTint="@color/spotMapBg" />
+
+
+                <ImageView
+                    android:id="@+id/p11"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/cirecle_border"
+                    android:backgroundTint="@color/spotMapBg" />
+
+                <ImageView
+                    android:id="@+id/p12"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/cirecle_border"
+                    android:backgroundTint="@color/spotMapBg" />
+
+                <ImageView
+                    android:id="@+id/p13"
+                    android:layout_width="39dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="9dp"
+                    android:background="@drawable/cirecle_border"
+                    android:backgroundTint="@color/spotMapBg" />
+
+
+                <ImageView
+                    android:id="@+id/p14"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="9dp"
+                    android:background="@drawable/cirecle_border"
+                    android:backgroundTint="@color/spotMapBg" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/txtStartLocation"
+                android:layout_alignStart="@+id/txtStartLocation"
+                android:layout_marginVertical="10dp"
+                android:background="@color/quantum_black_divider" />
+
+            <Button
+                android:id="@+id/btnContnuBooking"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:gravity="center"
+                android:layout_marginVertical="20dp"
+                android:text="Accept"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:background="@drawable/rect_rounded"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/source"
+        android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/background_dialog"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="#A9272525">
+        <include layout="@layout/group_dialog_box" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/background_dialog_spots"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="#A9272525">
+
+        <include layout="@layout/nearest_spot_dialog_box" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/background_notify_dialog"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="#A9272525">
+        <include layout="@layout/alert_notify" />
+
+    </LinearLayout>
+</FrameLayout>

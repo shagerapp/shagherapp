@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/header_border"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="0dp"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/baseline_keyboard_backspace_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="start"
+            android:layout_marginRight="19dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="@string/profile"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="396dp"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!--        style="@android:style/Widget.DeviceDefault.ImageButton"-->
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="145dp"
+                android:layout_height="124dp"
+                android:layout_marginBottom="5dp"
+                android:accessibilityLiveRegion="none"
+                android:background="@drawable/group"
+                android:backgroundTintMode="screen"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo1" />
+
+
+            <Button
+                android:id="@+id/btn_upload_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/baseline_upload_24"
+                android:backgroundTint="@color/secondry"
+                android:fontFamily="@font/arimo"
+                android:textAllCaps="false"
+
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/arimo"
+                android:paddingLeft="10dp"
+                android:text="Full Name"
+                android:textAllCaps="false"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/profile_display_Name"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="#16707070"
+                android:fontFamily="@font/arimo"
+                android:inputType="text"
+                android:layoutDirection="ltr"
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/label_car1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/arimo"
+                android:paddingLeft="10dp"
+                android:text="Car 1 Number"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/carNum1"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/baseline__car_24"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/editColor"
+                android:fontFamily="sans-serif-light"
+                android:hint="Plate Number"
+                android:inputType="text"
+                android:layoutDirection="ltr"
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/label_car2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/arimo"
+                android:paddingLeft="10dp"
+                android:text="Car 2 Number"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/carNum2"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/baseline__car_24"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/editColor"
+                android:fontFamily="sans-serif-light"
+                android:hint="Plate Number"
+                android:inputType="text"
+                android:layoutDirection="ltr"
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/label_car3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/arimo"
+                android:paddingLeft="10dp"
+                android:text="Car 3 Number"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/carNum3"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/editColor"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/baseline__car_24"
+                android:fontFamily="sans-serif-light"
+                android:hint="Plate Number"
+                android:inputType="text"
+                android:layoutDirection="ltr"
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/btn_profile_save"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/arimo"
+                android:text="SAVE"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_active_update"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/arimo"
+                android:gravity="center"
+                android:text="Edit"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

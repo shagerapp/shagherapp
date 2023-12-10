@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/notifiy_item"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/notifiy_item_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_border"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:gravity="end"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/notifiy_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="group name"
+        android:layout_margin="0dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/notifiy_item_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="10dp"
+        android:text="free"
+        android:textAlignment="textStart"
+        android:textSize="18dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:padding="0dp">
+
+    <TextView
+        android:id="@+id/notifiy_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="textEnd"
+        android:text="13-5-2020"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textSize="17dp"/>
+
+        <ImageView
+            android:id="@+id/notifiy_btn_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+           android:src="@drawable/ic_baseline_delete_24"/>
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
